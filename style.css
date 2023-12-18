@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100vh;
+    font-family: 'Zen Maru Gothic', serif;
+    color: #4e473f;
+}
+
+button, input, select, textarea {
+    font-family : inherit;
+    font-size   : 100%;
+  }  
+
+
+/* 背景 */
+
+section {
+    /* background-image: url(./img/bg_school_koutei.jpg); */
+    background-image: url(./img/mizutama.jpg);
+    width: 100%;
+    height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    position: relative;
+}
+
+/* 人間 */
+.backimg {
+    background-image: url(./img/nikoniko.png);
+    /* background: url(./img/syokku.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 800px;
+    position:fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* z-index: -1; */
+
+    /* background: #607e3a; */
+}
+
+
+/* おはなしボタン */
+
+#TOPtext {
+    /* 見た目 */
+    background-image: url(./img/daimei.png);
+    height: 150px;
+    width: 500px;
+    background-size: contain;
+
+    /* 配置 */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.TextArea {
+    display: inline-flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.TextArea button {
+    /* 見た目 */
+    background: #eb9f9f;
+    padding: 2% 7%;
+    border-radius: 50px;
+    color: #f4f4f4;
+    border: none;
+
+    /* 配置 */
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+
+
+
+
+/* 選択肢ボタン */
+
+#ansArea button {
+    /* 見た目 */
+    padding: 2% 2%;
+    background: rgba(241, 187, 186,.9);
+    /* color: #f4f4f4; */
+    border-radius: 50px;
+    margin: 1% 25%;
+    border: none;
+
+    z-index: 2;
+}
+
+.ansbutton0 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+
+/* 問題文 */
+
+.questionbox {
+    /* 見た目 */
+    height: 30vh;
+    width: 90%;
+    background: #f4f4f4;
+    border-radius: 15px;
+
+    /* 配置 */
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.questionbox h2 {
+    margin: 3%;
+}
+
+/* 問題 */
+.queBox,
+#quesentaku {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* z-index: 10000; */
+}
+
+#quesentaku {
+    z-index: 9999;
+    /* background: rgba(123,123,123 , .5) */
+}
+
+
+#sounanda {
+    z-index: 9999;
+    /* background: rgba(211,123,145 , .5); */
+}
+ 
+
+
+/* 説明ページ */
+.setumei {
+    /* 見た目 */
+    background: rgba(244, 244, 244, 0.8);
+    height: 90vh;
+    width: 90%;
+    border-radius: 50px;
+
+    /* 配置 */
+    z-index: 999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.daimei h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 2%;
+}
+
+.setumei h3{
+    margin: 5%;
+}
+
+/* エンディング */
+.end1,
+.end2,
+.end3,
+.end0 {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+
+/* 友達から */
+.end1 {
+    /* background: url(./img/yabai.png); */
+    /* background: #eb9f9f; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 999;
+}
+
+/* おつきあい */
+.end2 {
+    /* background: url(./img/kokuhaku_schoolgirl.png); */
+    /* background: red; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 999;
+}
+
+/* はなまるエンド */
+.end3 {
+    /* background: url(./img/high_touch_man_woman.png); */
+    /* background: #4e473f; */
+    /* visibility: visible; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 999;
+}
+
+/* お断り */
+.end0 {
+    /* background: url(./img/okotowari_shimasu_man.png); */
+    /* background: blue; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* visibility: visible; */
+    z-index: 999;
+}
+
+/* 会話後 */
+#sounanda {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+/* ボタン最上部 */
+#ansStartButton {
+    z-index: 2;
+}
+
+/* 文字成功不成功 */
+.mozi {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(./img/daiseikou.png);
+    background-size: contain;
+    height: 150px;
+    width: 500px;
+}
+
+
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- フォント -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;900&family=Noto+Sans+JP&family=Zen+Maru+Gothic:wght@400;900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="section">
+
+        <!-- 人の絵 -->
+        <div class="backimg" id="ningen">
+
+        </div>
+
+        <!-- 会話選択後 -->
+        <div id="sounanda">
+
+        </div>
+
+
+        <!-- エンディング -->
+        <div id="Ending">
+            <div class="end1" id="end01">
+            
+            </div>
+
+
+            <div class="end2" id="end02">
+
+            </div>
+
+
+            <div class="end3" id="end03">
+
+            </div>
+
+            <div class="end0" id="end00">
+
+            </div>
+        </div>
+
+
+        <!-- 絵を入れるところ？ -->
+        <div class="TextArea">
+
+            <!-- 画像でもいい -->
+            <div id="TOPtext"></div>
+
+            <button onclick="ansStart()" id="ansStartButton">告白する</button>
+
+        </div>
+
+        <div id="ansArea">
+
+                <!-- 説明文 -->
+                <div class="setumei" id="setumei">
+                    <div class="daimei">
+                        <h2>ゲーム説明</h2>
+                    </div>
+                    <h3>・女の子に返す言葉を選んでね</h3>
+                    <h3>・怒らせないようにやさしく告白をしてね</h3>
+                    <h3>・しっかり告白できたら女の子と付き合えるかも！</h3>
+                </div>
+
+                
+
+                <!-- 問題文 -->
+                <div class="queBox" id="queText">
+                    <div id="quesentaku">
+
+                    </div>
+                    <div class="questionbox" id="mondai">
+                        <h2 id="question"></h2>
+                    </div>
+                </div>
+
+                <div class="ansbutton0" id="ansText">
+                <!-- 解答ボタン -->
+                    <button onclick="ansButton(1)" id="ansButton1"></button>
+                    <button onclick="ansButton(2)" id="ansButton2"></button>
+                    <button onclick="ansButton(3)" id="ansButton3"></button>
+                </div>
+
+                <!-- 成功 不成功 -->
+                <div class="mozi" id="lose">
+                </div>
+
+                <!-- 正答数 -->
+                <!-- <p id="answer">aaaaa</p> -->
+
+                <!-- タイマー -->
+                <p id="countDown"></p>
+        
+        </div>
+
+    </section>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
