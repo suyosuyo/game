@@ -100,8 +100,11 @@ const ansStart = () => {
     
     document.getElementById("setumei").style.visibility = "visible";
 
+    // 背景水玉
     document.getElementById("section").style.backgroundImage = "url(./img/mizutama.jpg)";
 
+    // 人物初期
+    document.getElementById("ningen").style.backgroundImage = "url(./img/nikoniko.png)";
 
     // 成功失敗非表示
     document.getElementById("lose").style.visibility = "hidden";
@@ -283,7 +286,7 @@ const ansButton = (e) => {
 
             });
     
-        }else if(successCount === 5 || 4 ) {
+        }else if(successCount === 5 || successCount === 4 ) {
 
             // 問題文消去
             document.getElementById("ansText").style.visibility = "hidden";
@@ -316,7 +319,7 @@ const ansButton = (e) => {
 
             });
         
-        } else if(successCount === 3 || 2 || 1 ) {
+        } else if(successCount === 3 || successCount === 2 || successCount === 1 ) {
 
             // 問題文消去 
             document.getElementById("ansText").style.visibility = "hidden";
