@@ -138,22 +138,6 @@ const ansStart = () => {
     // カウントダウン開始
     countTimer();
     viewQuestion();
-    
-
-    // 問題文クリックで選択肢表示
-//     const clickaction = document.getElementById("queText")
-
-//     clickaction.addEventListener("click",() => {
-
-//         document.getElementById("ansText").style.visibility = "visible";
-
-//         document.getElementById("ansButton1").innerHTML = question[questionCount][1];
-//         document.getElementById("ansButton2").innerHTML = question[questionCount][2];
-//         document.getElementById("ansButton3").innerHTML = question[questionCount][3];
-
-
-// });
-
 
     });
 
